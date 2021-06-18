@@ -2,19 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
     <title>Портфолио</title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="shortcut icon" href="images/favicon.jpg" type="image/jpg">
+    <link rel="stylesheet" href="lib/jquery.fancybox.min.css">
 </head>
 <body>
 <header id="header">
     <div class="logo-infoBOX container">
-        <div class="logo">
-            <img src="images/logo.jpg" height="60" width="85"/>
+        <a href="index.html" class="logo">
+            <img src="images/logo.jpg" height="60" width="85" alt="Укладка тротуарной плитки Харьков"/>
             <div class="logo-text">
-                <h2>тротуаркА</h2>
+                <h2>ТротуаркА</h2>
             </div>
-        </div>
+        </a>
         <div class="number-time">
             <div class="time">
                 <img src="images/clock.png" height="35" width="35"/>
@@ -30,48 +32,280 @@
                     <a href="tel:+380974749727" class="click">+38(097)-474-97-27</a>
                 </div>
             </div>
+            <div class="burger-menu">
+                <span></span>
+            </div>
         </div>
     </div>
-    <div class="menu color-menu">
+    <div class="menu">
         <ul class="header_list container">
             <li><a href="index.html">Главная</a></li>
             <li><a href="price.html">Прайс на укладку</a></li>
-            <li><a href="#">Ассортимент</a></li>
-            <li><a href="#">Стройматериалы</a></li>
-            <li><a href="#">Портфолио</a></li>
-            <li><a href="#">Информация</a></li>
+            <li><a href="range.html">Ассортимент</a></li>
+            <li><a href="material.html">Стройматериалы</a></li>
+            <li><a href="portfolio.html">Портфолио</a></li>
+            <li><a href="information.html">Информация</a></li>
             <li><a href="contact.html">Контакты</a></li>
         </ul>
     </div>
 </header>
 <main>
-    <div id="popup-portfolio" class="popup-portfolio">
-        <a href="#header" class="popup_area-portfolio"></a>
-        <div class="popup_body-portfolio">
-            <div class="popup_content-portfolio">
-                <a href="#" class="popup_close">
-                    <img src="images/free-icon-mark-1205854.png" width="20" height="20">
-                </a>
-                <img src="" alt="">
-            </div>
-            <div class="popup_content-portfolio">
-                <a href="#" class="popup_close">
-                    <img src="images/free-icon-mark-1205854.png" width="20" height="20">
-                </a>
-                <img src="" alt="">
-            </div>
-            <div class="popup_content-portfolio">
-                <a href="#" class="popup_close">
-                    <img src="images/free-icon-mark-1205854.png" width="20" height="20">
-                </a>
-                <img src="" alt="">
-            </div>
-            <div class="popup_content-portfolio">
-                <a href="#" class="popup_close">
-                    <img src="images/free-icon-mark-1205854.png" width="20" height="20">
-                </a>
-                <img src="" alt="">
-            </div>
+    <h2 class="text">НАШИ РАБОТЫ</h2>
+    <div class="main-portfolio container">
+        <div class="works">
+            <a href="images/works/1.jpg" class="link-photo" data-fancybox="gallery">
+                <img src="images/works/1.jpg" class="img-photo" alt=""/>
+            </a>
+        </div>
+        <div class="works">
+            <a href="images/works/5.jpg" data-fancybox="gallery">
+                <img src="images/works/5.jpg" class="img-photo" alt=""/>
+            </a>
+        </div>
+        <div class="works">
+            <a href="images/works/6.jpg" class="link-photo" data-fancybox="gallery">
+                <img src="images/works/6.jpg" class="img-photo" alt=""/>
+            </a>
+        </div>
+        <div class="works">
+            <a href="images/works/11.jpg" class="link-photo" data-fancybox="gallery">
+                <img src="images/works/11.jpg" class="img-photo" alt=""/>
+            </a>
+        </div>
+        <div class="works">
+            <a href="images/works/15.jpg" class="link-photo" data-fancybox="gallery">
+                <img src="images/works/15.jpg" class="img-photo" alt=""/>
+            </a>
+        </div>
+        <div class="works">
+            <a href="images/works/21.jpg" class="link-photo" data-fancybox="gallery">
+                <img src="images/works/21.jpg" class="img-photo" alt=""/>
+            </a>
+        </div>
+        <div class="works">
+            <a href="images/works/24.jpg" class="link-photo" data-fancybox="gallery">
+                <img src="images/works/24.jpg" class="img-photo" alt=""/>
+            </a>
+        </div>
+        <div class="works">
+            <a href="images/works/34.jpg" class="link-photo" data-fancybox="gallery">
+                <img src="images/works/34.jpg" class="img-photo" alt=""/>
+            </a>
+        </div>
+        <div class="works">
+            <a href="images/works/33.jpg" class="link-photo" data-fancybox="gallery">
+                <img src="images/works/33.jpg" class="img-photo" alt=""/>
+            </a>
+        </div>
+        <div class="works">
+            <a href="images/works/31.jpg" class="link-photo" data-fancybox="gallery">
+                <img src="images/works/31.jpg" class="img-photo" alt=""/>
+            </a>
+        </div>
+        <div class="works">
+            <a href="images/works/35.jpg" class="link-photo" data-fancybox="gallery">
+                <img src="images/works/35.jpg" class="img-photo" alt=""/>
+            </a>
+        </div>
+        <div class="works">
+            <a href="images/works/37.jpg" class="link-photo" data-fancybox="gallery">
+                <img src="images/works/37.jpg" class="img-photo" alt=""/>
+            </a>
+        </div>
+        <div class="works">
+            <a href="images/works/41.jpg" class="link-photo" data-fancybox="gallery">
+                <img src="images/works/41.jpg" class="img-photo" alt=""/>
+            </a>
+        </div>
+        <div class="works">
+            <a href="images/works/50.jpg" class="link-photo" data-fancybox="gallery">
+                <img src="images/works/50.jpg" class="img-photo" alt=""/>
+            </a>
+        </div>
+        <div class="works">
+            <a href="images/works/51.jpg" class="link-photo" data-fancybox="gallery">
+                <img src="images/works/51.jpg" class="img-photo" alt=""/>
+            </a>
+        </div>
+        <div class="works">
+            <a href="images/works/2.jpg" class="link-photo" data-fancybox="gallery">
+                <img src="images/works/2.jpg" class="img-photo" alt=""/>
+            </a>
+        </div>
+        <div class="works">
+            <a href="images/works/3.jpg" class="link-photo" data-fancybox="gallery">
+                <img src="images/works/3.jpg" class="img-photo" alt=""/>
+            </a>
+        </div>
+        <div class="works">
+            <a href="images/works/4.jpg" class="link-photo" data-fancybox="gallery">
+                <img src="images/works/4.jpg" class="img-photo" alt=""/>
+            </a>
+        </div>
+        <div class="works">
+            <a href="images/works/7.jpg" class="link-photo" data-fancybox="gallery">
+                <img src="images/works/7.jpg" class="img-photo" alt=""/>
+            </a>
+        </div>
+        <div class="works">
+            <a href="images/works/8.jpg" class="link-photo" data-fancybox="gallery">
+                <img src="images/works/8.jpg" class="img-photo" alt=""/>
+            </a>
+        </div>
+        <div class="works">
+            <a href="images/works/9.jpg" class="link-photo" data-fancybox="gallery">
+                <img src="images/works/9.jpg" class="img-photo" alt=""/>
+            </a>
+        </div>
+        <div class="works">
+            <a href="images/works/10.jpg" class="link-photo" data-fancybox="gallery">
+                <img src="images/works/10.jpg" class="img-photo" alt=""/>
+            </a>
+        </div>
+        <div class="works">
+            <a href="images/works/12.jpg" class="link-photo" data-fancybox="gallery">
+                <img src="images/works/12.jpg" class="img-photo" alt=""/>
+            </a>
+        </div>
+        <div class="works">
+            <a href="images/works/13.jpg" class="link-photo" data-fancybox="gallery">
+                <img src="images/works/13.jpg" class="img-photo" alt=""/>
+            </a>
+        </div>
+        <div class="works">
+            <a href="images/works/14.jpg" class="link-photo" data-fancybox="gallery">
+                <img src="images/works/14.jpg" class="img-photo" alt=""/>
+            </a>
+        </div>
+        <div class="works">
+            <a href="images/works/16.jpg" class="link-photo" data-fancybox="gallery">
+                <img src="images/works/16.jpg" class="img-photo" alt=""/>
+            </a>
+        </div>
+        <div class="works">
+            <a href="images/works/17.jpg" class="link-photo" data-fancybox="gallery">
+                <img src="images/works/17.jpg" class="img-photo" alt=""/>
+            </a>
+        </div>
+        <div class="works">
+            <a href="images/works/18.jpg" class="link-photo" data-fancybox="gallery">
+                <img src="images/works/18.jpg" class="img-photo" alt=""/>
+            </a>
+        </div>
+        <div class="works">
+            <a href="images/works/19.jpg" class="link-photo" data-fancybox="gallery">
+                <img src="images/works/19.jpg" class="img-photo" alt=""/>
+            </a>
+        </div>
+        <div class="works">
+            <a href="images/works/20.jpg" class="link-photo" data-fancybox="gallery">
+                <img src="images/works/20.jpg" class="img-photo" alt=""/>
+            </a>
+        </div>
+        <div class="works">
+            <a href="images/works/22.jpg" class="link-photo" data-fancybox="gallery">
+                <img src="images/works/22.jpg" class="img-photo" alt=""/>
+            </a>
+        </div>
+        <div class="works">
+            <a href="images/works/23.jpg" class="link-photo" data-fancybox="gallery">
+                <img src="images/works/23.jpg" class="img-photo" alt=""/>
+            </a>
+        </div>
+        <div class="works">
+            <a href="images/works/25.jpg" class="link-photo" data-fancybox="gallery">
+                <img src="images/works/25.jpg" class="img-photo" alt=""/>
+            </a>
+        </div>
+        <div class="works">
+            <a href="images/works/26.jpg" class="link-photo" data-fancybox="gallery">
+                <img src="images/works/26.jpg" class="img-photo" alt=""/>
+            </a>
+        </div>
+        <div class="works">
+            <a href="images/works/27.jpg" class="link-photo" data-fancybox="gallery">
+                <img src="images/works/27.jpg" class="img-photo" alt=""/>
+            </a>
+        </div>
+        <div class="works">
+            <a href="images/works/28.jpg" class="link-photo" data-fancybox="gallery">
+                <img src="images/works/28.jpg" class="img-photo" alt=""/>
+            </a>
+        </div>
+        <div class="works">
+            <a href="images/works/29.jpg" class="link-photo" data-fancybox="gallery">
+                <img src="images/works/29.jpg" class="img-photo" alt=""/>
+            </a>
+        </div>
+        <div class="works">
+            <a href="images/works/30.jpg" class="link-photo" data-fancybox="gallery">
+                <img src="images/works/30.jpg" class="img-photo" alt=""/>
+            </a>
+        </div>
+        <div class="works">
+            <a href="images/works/32.jpg" class="link-photo" data-fancybox="gallery">
+                <img src="images/works/32.jpg" class="img-photo" alt=""/>
+            </a>
+        </div>
+        <div class="works">
+            <a href="images/works/36.jpg" class="link-photo" data-fancybox="gallery">
+                <img src="images/works/36.jpg" class="img-photo" alt=""/>
+            </a>
+        </div>
+        <div class="works">
+            <a href="images/works/38.jpg" class="link-photo" data-fancybox="gallery">
+                <img src="images/works/38.jpg" class="img-photo" alt=""/>
+            </a>
+        </div>
+        <div class="works">
+            <a href="images/works/39.jpg" class="link-photo" data-fancybox="gallery">
+                <img src="images/works/39.jpg" class="img-photo" alt=""/>
+            </a>
+        </div>
+        <div class="works">
+            <a href="images/works/40.jpg" class="link-photo" data-fancybox="gallery">
+                <img src="images/works/40.jpg" class="img-photo" alt=""/>
+            </a>
+        </div>
+        <div class="works">
+            <a href="images/works/42.jpg" class="link-photo" data-fancybox="gallery">
+                <img src="images/works/42.jpg" class="img-photo" alt=""/>
+            </a>
+        </div>
+        <div class="works">
+            <a href="images/works/43.jpg" class="link-photo" data-fancybox="gallery">
+                <img src="images/works/43.jpg" class="img-photo" alt=""/>
+            </a>
+        </div>
+        <div class="works">
+            <a href="images/works/44.jpg" class="link-photo" data-fancybox="gallery">
+                <img src="images/works/44.jpg" class="img-photo" alt=""/>
+            </a>
+        </div>
+        <div class="works">
+            <a href="images/works/45.jpg" class="link-photo" data-fancybox="gallery">
+                <img src="images/works/45.jpg" class="img-photo" alt=""/>
+            </a>
+        </div>
+        <div class="works">
+            <a href="images/works/46.jpg" class="link-photo" data-fancybox="gallery">
+                <img src="images/works/46.jpg" class="img-photo" alt=""/>
+            </a>
+        </div>
+        <div class="works">
+            <a href="images/works/47.jpg" class="link-photo" data-fancybox="gallery">
+                <img src="images/works/47.jpg" class="img-photo" alt=""/>
+            </a>
+        </div>
+        <div class="works">
+            <a href="images/works/48.jpg" class="link-photo" data-fancybox="gallery">
+                <img src="images/works/48.jpg" class="img-photo" alt=""/>
+            </a>
+        </div>
+        <div class="works">
+            <a href="images/works/49.jpg" class="link-photo" data-fancybox="gallery">
+                <img src="images/works/49.jpg" class="img-photo" alt=""/>
+            </a>
         </div>
     </div>
 </main>
@@ -95,5 +329,8 @@
         </div>
     </div>
 </footer>
+<script src="lib/jquery-3.6.0.min.js"></script>
+<script src="lib/jquery.fancybox.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>

@@ -15,25 +15,35 @@
 body{
     font-family: Montserrat;
 }
+.main{
+    margin-top: 150px;
+}
+main{
+    margin-top: 180px;
+}
+body p{
+    text-indent: 20px;
+    line-height: 1.5;
+}
 .logo-infoBOX{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    background: #fff;
+    position: relative;
+    z-index: 6;
 }
 .logo{
     max-width: 30%;
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 .logo h2{
-    font-size: 55px;
+    font-size: 45px;
     color: #000;
-    margin-top: 10px;
 }
-
-.logo img{
-    margin-top: 15px;
-    margin-left: 10px;
-    margin-right: 10px;
+.article-main{
+    margin-top: 180px ;
 }
 .number-time img{
     margin-right: 10px;
@@ -62,6 +72,25 @@ ul li {
 .click{
     text-decoration: underline ;
 }
+header{
+    position: fixed;
+    width: 100%;
+    height: 150px;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    box-shadow: 0px 2px 5px 0px rgb(0 0 0 / 25%);
+}
+header:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 3;
+}
 .header_list{
     padding: 0;
     display: flex;
@@ -69,9 +98,17 @@ ul li {
 }
 .menu{
     background-color: #fff;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    overflow: auto;
+}
+.burger-menu{
+    display: none;
 }
 .header_list li{
-    padding: 20px 25px;
+    padding: 15px 25px;
 }
 .header_list li:hover{
     background-color: rgba(145, 131, 131, 0.3);
@@ -229,6 +266,14 @@ ul li {
     font-size: 18px;
     transition: all 0.8s ease 0s;
 }
+.form_input_tel{
+    height: 50px;
+    padding: 0 20px;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 18px;
+    transition: all 0.8s ease 0s;
+}
 .form_input:focus{
     box-shadow: 0 0 15px rgba(145, 131, 131, 0.7);
 }
@@ -349,20 +394,20 @@ textarea.form_input{
 }
 .number-content{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 .number1 h4{
-    font-size: 20px;
+    font-size: 30px;
 }
 .number1 h5{
-    font-size: 50px;
+    font-size: 60px;
     font-weight: 700;
 }
 .number1{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 100px;
+    padding: 0 50px;
 }
 .price{
     display: flex;
@@ -417,6 +462,9 @@ textarea.form_input{
     left: 50%;
     transform: translate(-50%, -50%);
 }
+.hidden{
+    display: none;
+}
 .popular-goods{
     display: flex;
     flex-wrap: wrap;
@@ -439,7 +487,7 @@ textarea.form_input{
     padding: 10px 40px;
     background-color: #b5b5b5;
     display: block;
-    margin: 10px 30px;
+    margin: 3px 30px;
 }
 .product-button:hover{
     background-color: rgba(145, 131, 131, 0.9);
@@ -579,68 +627,369 @@ td{
     background-color: rgba(145, 131, 131, 0.8);
     transition: 0.4s;
 }
-header{
-    box-shadow: 0px 2px 5px 0px rgb(0 0 0 / 25%);
-}
+
 
 
 /*Material*/
-.info-material{
+.shop{
     display: flex;
     justify-content: space-between;
-    padding-top: 80px;
-}
-.info-material p{
-    padding: 20px;
-    width: 35%;
-    text-align: right;
-}
-.info-material img{
-    width: 60%;
-}
-.material h3, .material h2{
     text-align: center;
-    padding: 20px;
 }
-.material p{
-    max-width: 70%;
-    margin: 0 auto;
-    padding: 10px;
+.shop h3{
+    font-size: 50px;
+    margin-top: 20px;
 }
-.material img{
-    display: block;
-    margin: 0 auto;
+.shop p{
+    font-size: 25px;
+    margin-bottom: 20px;
 }
-.material table{
-    margin: 0 auto;
+.text-shop{
+    margin: 140px auto;
 }
-
+.text-shop img{
+    margin: 20px;
+}
+.shop .click{
+    font-size: 20px;
+}
 /*Info*/
 .article{
     width: 100%;
     height: 300px;
     margin: 60px auto;
     display: flex;
-}
-.text-info a{
-    display: block;
+    justify-content: space-between;
 }
 .text-info{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 65%;
+}
+.text-info .link-click{
+    box-shadow: 0px 2px 5px 0px rgb(0 0 0 / 55%);
 }
 .article p{
-    font-size: 20px;
+    font-size: 18px;
+    text-indent: 25px;
 }
 .title-info{
     font-size: 30px;
+    text-decoration: underline;
+    padding-bottom: 10px;
+    font-weight: 700;
 }
 .article img{
-    width: 325px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
+    margin-left: 40px;
+    border-radius: 50%;
 }
 .info-text{
     display: flex;
     flex-direction: column;
+}
+.line{
+    color: #b5b5b5;
+}
+.float{
+    float: left;
+}
+.title-article{
+    text-align: center;
+    font-size: 35px;
+    padding: 30px 0;
+}
+.article-main img{
+    padding: 0 20px 20px 20px;
+}
+.article-main h2{
+    text-align: center;
+    font-size: 35px;
+    padding: 30px;
+}
+.article-main p{
+    text-indent: 25px;
+    line-height: 1.5;
+    margin-top: 20px;
+}
+.article-main h3{
+    text-align: center;
+    padding: 15px 0;
+}
+.article-main .link-click, .link-click .range{
+    margin: 30px auto;
+}
+.article-p{
+    margin: 15px;
+}
+
+.popup_portfolio{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    top: 0;
+    left: 0;
+}
+.popup_portfolio:target{
+    opacity: 1;
+    visibility: visible;
+}
+.popup_body_portfolio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 95%;
+    padding: 30px 10px;
+}
+.popup_content_portfolio{
+    position: relative;
+}
+.popup_close{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.popup_content_portfolio{
+    position: relative;
+    max-width: 700px;
+    margin: 0 auto;
+    color: #000;
+    padding: 30px 20px;
+    background-color: #b5b5b5;
+    border-radius: 8px;
+}
+.popup_img{
+    width: 700;
+    height: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.product-range{
+    display: flex;
+    justify-content: space-between;
+    margin: 40px auto;
+}
+.product-range .text{
+    display: flex;
+    flex-direction: column;
+    max-width: 65%;
+}
+.product-range .text h2{
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 35px;
+}
+.product-range .text p{
+    font-size: 20px;
+}
+
+.main-portfolio{
+    width: 960px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.works{
+    width: 290px;
+    height: 390px;
+    margin-bottom: 65px;
+    border: 10px solid #b5b5b5;
+}
+.works img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+@media (max-width: 767px) {
+    body.lock {
+        overflow: hidden;
+    }
+
+    .logo-infoBOX {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #fff;
+        position: relative;
+        z-index: 6;
+    }
+
+    .burger-menu {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+    }
+
+    .burger-menu:before,
+    .burger-menu:after {
+        content: '';
+        background-color: #000;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        transition: all 0.3s ease 0s;
+    }
+
+    .burger-menu span {
+        position: absolute;
+        background-color: #000;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        top: 9px;
+    }
+
+    .menu {
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #b5b5b5;
+        padding-top: 150px;
+        transition: all 0.3s ease 0s;
+    }
+
+    .menu.active {
+        top: 0;
+    }
+
+    .header_list {
+        display: block;
+    }
+
+    .menu li {
+        display: flex;
+        justify-content: center;
+        padding: 45px 30px;
+        font-size: 25px;
+    }
+
+    .burger-menu:before {
+        top: 0;
+    }
+
+    .logo {
+        margin-top: 5px;
+    }
+
+    .burger-menu:after {
+        bottom: 0;
+    }
+
+    .burger-menu.active:before {
+        transform: rotate(45deg);
+        top: 7px;
+    }
+
+    .burger-menu.active:after {
+        transform: rotate(-45deg);
+        bottom: 11px;
+    }
+
+    .burger-menu.active span {
+        transform: scale(0);
+    }
+
+    .banner {
+        height: 345px;
+    }
+
+    .banner-text .title {
+        font-size: 53px;
+    }
+
+    .title-text {
+        margin-top: 10px;
+    }
+    .info-box{
+        display: flex;
+        justify-content: center;
+        font-size: 25px;
+        padding: 0 40px 40px 40px;
+    }
+    .text{
+        text-align: center;
+        font-size: 40px;
+        margin-top: 20px;
+    }
+    .text2{
+        font-size: 30px;
+    }
+    .technology p {
+        font-size: 25px;
+        margin: 10px 30px 0 30px;
+    }
+    .technology-info li {
+        font-size: 25px;
+    }
+    .technology-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .technology-info img{
+        max-width: 100%;
+    }
+    .price{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .price table{
+        font-size: 23px;
+    }
+    .link-click {
+        font-size: 26px;
+        padding: 35px 140px;
+    }
+    .video {
+        padding: 0;
+    }
+    .product {
+        width: 45%;
+    }
+    .popular-goods {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: space-between;
+    }
+    .map-call{
+        display: flex;
+        flex-direction: column;
+    }
+    .copy-wrapper {
+        max-width: 80%;
+    }
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+    .detail {
+        padding: 20px;
+        font-size: 25px;
+        text-align: center;
+    }
+    .shop {
+        flex-direction: column;
+    }
+    .banner-shop img{
+        width: 50%;
+    }
+    .text-shop {
+        margin: 0;
+    }
+
 }

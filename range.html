@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
     <title>Ассортимент</title>
   <link rel="stylesheet" href="styles/style.css">
   <link rel="shortcut icon" href="images/favicon.jpg" type="image/jpg">
@@ -9,12 +10,12 @@
 <body>
 <header id="header">
   <div class="logo-infoBOX container">
-    <div class="logo">
-      <img src="images/logo.jpg" height="60" width="85"/>
+    <a href="index.html" class="logo">
+      <img src="images/logo.jpg" height="60" width="85" alt="Укладка тротуарной плитки Харьков"/>
       <div class="logo-text">
-        <h2>тротуаркА</h2>
+        <h2>ТротуаркА</h2>
       </div>
-    </div>
+    </a>
     <div class="number-time">
       <div class="time">
         <img src="images/clock.png" height="35" width="35"/>
@@ -30,16 +31,19 @@
           <a href="tel:+380974749727" class="click">+38(097)-474-97-27</a>
         </div>
       </div>
+      <div class="burger-menu">
+        <span></span>
+      </div>
     </div>
   </div>
-  <div class="menu color-menu">
+  <div class="menu">
     <ul class="header_list container">
       <li><a href="index.html">Главная</a></li>
       <li><a href="price.html">Прайс на укладку</a></li>
-      <li><a href="#">Ассортимент</a></li>
+      <li><a href="range.html">Ассортимент</a></li>
       <li><a href="material.html">Стройматериалы</a></li>
-      <li><a href="#">Портфолио</a></li>
-      <li><a href="#">Информация</a></li>
+      <li><a href="portfolio.html">Портфолио</a></li>
+      <li><a href="information.html">Информация</a></li>
       <li><a href="contact.html">Контакты</a></li>
     </ul>
   </div>
@@ -49,13 +53,15 @@
   <div class="range">
     <div class="range-options">
       <img src="images/syhopress.jpg">
-      <a href="" class="range-button">СУХОПРЕССОВАННАЯ</a>
+      <a href="option1.html" class="range-button">СУХОПРЕССОВАННАЯ</a>
     </div>
     <div class="range-options">
       <img src="images/vibro.jpg">
-      <a href="" class="range-button">ВИБРОЛИТАЯ</a>
+      <a href="option2.html" class="range-button">ВИБРОЛИТАЯ</a>
     </div>
   </div>
+  <h3 class="detail container">*Ассортимент может немного отличаться в зависимости от наличия на складе, объема и других факторов.
+    Вы можете всегда уточнить интересующую Вас информацию по телефонам и E-Mail. Смотрите страницу Контакты.</h3>
 </main>
 <footer>
   <div class="footer container">
